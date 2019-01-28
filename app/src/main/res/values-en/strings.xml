@@ -2,16 +2,26 @@
 <resources>
     <string name="app_name">Intergram</string>
     <string name="title_activity_referencia">ReferenciaActivity</string>
-    <string name="hint_username">Username</string>
-    <string name="hint_password">Password</string>
+    <string name="hint_username">Nombre de Usuario</string>
+    <string name="hint_password">Contraseña</string>
     <string name="text_button_login">Login</string>
-    <string name="dont_have_account">Do not account?,</string>
-    <string name="create_here">Create here</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_name">Name</string>
-    <string name="hint_user">User</string>
-    <string name="hint_password_creataccount">Password</string>
-    <string name="hint_confirm_password">Confirm password</string>
-    <string name="text_button_createaccount">Join us</string>
-    <string name="toolbar_tittle_createaccount">Create Account</string>
+    <string name="dont_have_account">No tienes cuenta?,</string>
+    <string name="create_here">Crea una aquí</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_password_creataccount">Constraseña</string>
+    <string name="hint_confirm_password">Confirmar contraseña</string>
+    <string name="text_button_createaccount">Únete</string>
+    <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
+    <string name="username_card">Uriel Remirez</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecar_card">4 días</string>
+    <string name="likenumbercar_card">10 likes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="itemsearch">Search</string>
+    <string name="itemhome">Home</string>
+    <string name="itemprofile">Perfil</string>
 </resources>

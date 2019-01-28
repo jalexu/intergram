@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import intergrupo.com.intergram.view.ConteinerActivity;
 import intergrupo.com.intergram.view.CreateAccountActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,5 +21,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
     }
+
 
 }

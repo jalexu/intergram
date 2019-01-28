@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dising="http://schemas.android.com/tools"
+    android:id="@+id/bottombar"
+    android:layout_height="@dimen/bottombar_height"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom|end"
+    app:itemBackground="@color/colorPrimary"
+    app:itemIconTint="@android:color/white"
+    app:itemTextColor="@android:color/white"
+    dising:menu="@menu/bottombar_items"
+
+    >
+
+</android.support.design.widget.BottomNavigationView>

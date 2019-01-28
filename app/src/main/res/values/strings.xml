@@ -13,4 +13,14 @@
     <string name="hint_confirm_password">Confirmar contraseña</string>
     <string name="text_button_createaccount">Únete</string>
     <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
+    <string name="username_card">Uriel Remirez</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecar_card">4 días</string>
+    <string name="likenumbercar_card">10 Me gusta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="itemsearch">Buscar</string>
+    <string name="itemhome">Inicio</string>
+    <string name="itemprofile">Perfil</string>
 </resources>

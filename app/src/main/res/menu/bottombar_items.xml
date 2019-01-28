@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search_item"
+        android:title="@string/itemsearch"
+        android:icon="@drawable/search"
+        android:iconTint="@color/color_item"
+        />
+
+    <item
+        android:id="@+id/searh_home"
+        android:title="@string/itemhome"
+        android:icon="@drawable/home"
+        android:iconTint="@color/color_item"/>
+
+    <item
+        android:id="@+id/searh_profile"
+        android:title="@string/itemprofile"
+        android:icon="@drawable/profile"
+        android:iconTint="@color/color_item"/>
+
+
+</menu>
