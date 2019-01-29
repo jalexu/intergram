@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="1">
-        
+
         <RelativeLayout
             android:id="@+id/logo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0.6"
-            >
+            android:layout_weight="0.6">
 
 
             <ImageView
@@ -32,8 +31,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true"
-            android:layout_weight="0.4">
+            android:layout_weight="0.4"
+            android:fillViewport="true">
 
 
             <LinearLayout
@@ -52,7 +51,7 @@
                         android:id="@+id/username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/hint_username"/>
+                        android:hint="@string/hint_username" />
                     /*todo texto como el hint se debe creat en values-string y luego
                     ser llamados por su identificador*/
                 </android.support.design.widget.TextInputLayout>
@@ -67,22 +66,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_password"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword" />
                 </android.support.design.widget.TextInputLayout>
 
                 <Button
                     android:id="@+id/login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="goLogin"
                     android:text="@string/text_button_login"
-                    android:theme="@style/RaisedButtonDark"
-                    android:onClick="goConteiner"/>
+                    android:theme="@style/RaisedButtonDark" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
-                    >
+                    android:gravity="center">
 
                     <TextView
                         android:id="@+id/donthaveAccount"
@@ -90,14 +88,14 @@
                         android:layout_height="wrap_content"
                         android:text="@string/dont_have_account"
                         android:textColor="@color/editTextColorWhite"
-                        android:textStyle="bold"
                         android:textSize="@dimen/textsize_donthaveaccount"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/createHere"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/edittext_marginLeft"
                         android:layout_toRightOf="@id/donthaveAccount"
                         android:onClick="goCreateAccount"
                         android:text="@string/create_here"
