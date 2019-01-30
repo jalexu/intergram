@@ -35,9 +35,9 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        showToolbar("Home", false, view);
+        showToolbar(getResources().getString(R.string.itemhome), false, view);
 
-        RecyclerView picturesRecycle = (RecyclerView) view.findViewById(R.id.pictureRecycle);
+        RecyclerView picturesRecycle =view.findViewById(R.id.pictureRecycle);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -54,10 +54,10 @@ public class HomeFragment extends Fragment {
     //metodo que devuelve un arraylis de pictures
     public ArrayList<Picture> buildPictures() {
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("http://2.bp.blogspot.com/-uNFR4JIdoAU/UUK-CtzWUJI/AAAAAAAADzU/eLe6qFm_Y3w/s640/paisajes+02.jpg", "Jaime Uribe", "4 días", "3"));
+        pictures.add(new Picture("http://2.bp.blogspot.com/-uNFR4JIdoAU/UUK-CtzWUJI/AAAAAAAADzU/eLe6qFm_Y3w/s640/paisajes+02.jpg", "Jaime Uribe", "4 días", "3 me gusta"));
         pictures.add(new Picture("http://eldiario.com.co/uploads/userfiles/20150103/image/P%C3%81G3-copia.jpg", "Tatiana Lopez", "1 días", "50"));
-        pictures.add(new Picture("https://cdn.logitravel.com/wsimgresize/resize/crop/450/330/cdn.logitravel.com/contenidos/fotos/CIRCUITOS/900_900/1003312.jpg", "Liliana Tamaño", "17 días", "21"));
-        pictures.add(new Picture("https://www.france-voyage.com/visuals/photos/paisajes-litoral-costa-azul-6509_w600.jpg", "Juan Lopez", "10 días", "15"));
+        pictures.add(new Picture("https://cdn.logitravel.com/wsimgresize/resize/crop/450/330/cdn.logitravel.com/contenidos/fotos/CIRCUITOS/900_900/1003312.jpg", "Liliana Tamaño", "17 días", "21 me gusta"));
+        pictures.add(new Picture("https://www.france-voyage.com/visuals/photos/paisajes-litoral-costa-azul-6509_w600.jpg", "Juan Lopez", "10 días", "15 me gusta"));
 
         return pictures;
     }

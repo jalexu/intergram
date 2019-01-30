@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 import intergrupo.com.intergram.R;
@@ -48,6 +50,7 @@ public class PictureAdapterRecycleView extends RecyclerView.Adapter<PictureAdapt
         pictureViewHolder.usernameCard.setText(picture.getUserName());
         pictureViewHolder.timeCard.setText(picture.getTime());
         pictureViewHolder.likeNumerCard.setText((picture.getLike_numer()));
+        Picasso.get().load(picture.getPicture()).into(pictureViewHolder.pictureCard);
     }
 
     //saber cuantas veces recorre el arrayList

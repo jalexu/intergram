@@ -6,13 +6,17 @@
     android:layout_height="wrap_content"
     tools:context=".view.ConteinerActivity">
 
+    <include layout="@layout/bottombar" />
+
     <FrameLayout
         android:id="@+id/conteiner"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="@dimen/bottombar_height" >
     </FrameLayout>
-    <include layout="@layout/bottombar" />
+
+
+
 
 
 
