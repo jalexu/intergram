@@ -23,5 +23,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="itemsearch">Search</string>
     <string name="itemhome">Home</string>
-    <string name="itemprofile">Perfil</string>
+    <string name="itemprofile">Profile</string>
+    <string name="secondword_detail">Like me</string>
 </resources>

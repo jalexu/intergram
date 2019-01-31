@@ -7,6 +7,7 @@ import android.view.View;
 
 import intergrupo.com.intergram.view.ConteinerActivity;
 import intergrupo.com.intergram.view.CreateAccountActivity;
+import intergrupo.com.intergram.view.PictureDatailActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,5 +28,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this, ConteinerActivity.class);
         startActivity(intent);
     }
+
 
 }

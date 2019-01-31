@@ -10,7 +10,7 @@
     app:itemBackground="@color/colorPrimary"
     app:itemIconTint="@android:color/white"
     app:itemTextColor="@android:color/white"
-    dising:menu="@menu/bottombar_items"
+    app:menu="@menu/bottombar_items"
 
     >
 

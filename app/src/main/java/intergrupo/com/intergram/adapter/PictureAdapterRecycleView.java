@@ -3,6 +3,7 @@ package intergrupo.com.intergram.adapter;
 //esta clase trabaja los views que componen al cardview
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 
 import intergrupo.com.intergram.R;
 import intergrupo.com.intergram.model.Picture;
+import intergrupo.com.intergram.view.PictureDatailActivity;
 
 //Adpater permite
 public class PictureAdapterRecycleView extends RecyclerView.Adapter<PictureAdapterRecycleView.PictureViewHolder> {
@@ -43,7 +45,7 @@ public class PictureAdapterRecycleView extends RecyclerView.Adapter<PictureAdapt
         return new PictureViewHolder(view);
     }
 
-    //se trabaja con toda la lista de elementos
+    //se trabaja con toda la lista de elementos trabaja todos los datos ... trabaja los lisenes
     @Override
     public void onBindViewHolder(@NonNull PictureViewHolder pictureViewHolder, int i) {
         Picture picture=pictures.get(i);
@@ -51,6 +53,17 @@ public class PictureAdapterRecycleView extends RecyclerView.Adapter<PictureAdapt
         pictureViewHolder.timeCard.setText(picture.getTime());
         pictureViewHolder.likeNumerCard.setText((picture.getLike_numer()));
         Picasso.get().load(picture.getPicture()).into(pictureViewHolder.pictureCard);
+
+
+        pictureViewHolder.pictureCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(activity, PictureDatailActivity.class);
+                //no se pone star, por encontrarme en una actividad
+                activity.startActivity(intent);
+
+            }
+        });
     }
 
     //saber cuantas veces recorre el arrayList
@@ -69,7 +82,7 @@ public class PictureAdapterRecycleView extends RecyclerView.Adapter<PictureAdapt
         public PictureViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            pictureCard     =(ImageView) itemView.findViewById(R.id.pictureCard);
+            pictureCard     =(ImageView) itemView.findViewById(R.id.picture_Card);
             usernameCard    =(TextView) itemView.findViewById(R.id.usernamecard);
             timeCard        =(TextView) itemView.findViewById(R.id.timeCard);
             likeNumerCard   =(TextView) itemView.findViewById(R.id.likeNumberCard);
