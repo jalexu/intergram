@@ -4,8 +4,11 @@ package intergrupo.com.intergram.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +48,7 @@ public class PictureAdapterRecycleView extends RecyclerView.Adapter<PictureAdapt
         return new PictureViewHolder(view);
     }
 
-    //se trabaja con toda la lista de elementos trabaja todos los datos ... trabaja los lisenes
+    //se trabaja con toda la lista de elementos trabaja todos los datos ... trabaja los lisTeners
     @Override
     public void onBindViewHolder(@NonNull PictureViewHolder pictureViewHolder, int i) {
         Picture picture=pictures.get(i);
@@ -55,12 +58,27 @@ public class PictureAdapterRecycleView extends RecyclerView.Adapter<PictureAdapt
         Picasso.get().load(picture.getPicture()).into(pictureViewHolder.pictureCard);
 
 
+        //cuando alguien de clic sobre la imagen, se abre otra la actividad PictureDatailActivity
         pictureViewHolder.pictureCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(activity, PictureDatailActivity.class);
-                //no se pone star, por encontrarme en una actividad
-                activity.startActivity(intent);
+
+                //para efecto de entrada
+                if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.LOLLIPOP){
+
+                    Explode explode = new Explode();
+                    explode.setDuration(100);
+                    activity.getWindow().setExitTransition(explode);
+
+                    activity.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation
+                            (activity, v, activity.getString(R.string.transationname_picture)).toBundle());
+                }else{
+                    //no se pone star, por encontrarme en una actividad
+                    activity.startActivity(intent);
+
+                }
+
 
             }
         });

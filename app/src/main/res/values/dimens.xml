@@ -6,7 +6,7 @@
     <dimen name="edittext_margin_createaccount">10dp</dimen>
     <dimen name="height_cardview">200dp</dimen>
     <dimen name="cornerradius_cardview">6dp</dimen>
-    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="textsize_username_cardview">25sp</dimen>
     <dimen name="firstword_textsize_card">15sp</dimen>
     <dimen name="timecard_marginleft_card">5dp</dimen>
@@ -23,4 +23,20 @@
     <dimen name="paddingtop_tittleimagedatail">20dp</dimen>
     <dimen name="textsize_Content">20sp</dimen>
     <dimen name="padding_horizontal_textcontentdatail">30dp</dimen>
+    <dimen name="textsize_usernameprofile">25sp</dimen>
+    <dimen name="dimen_circuleImagenProfile">160dp</dimen>
+    <dimen name="margintop_circuleimageprofile">10dp</dimen>
+    <dimen name="elevation_circuleimageprofile">10dp</dimen>
+    <dimen name="limitY_circuleimage">-250dp</dimen>
+    <dimen name="margintoptollbar_circuleimageprocile">-15dp</dimen>
+    <dimen name="width_circleimagetoolbar">40dp</dimen>
+    <dimen name="textsize_usernametoolbarprofile">18sp</dimen>
+    <dimen name="marginleft_usernametoolbarprofile">72dp</dimen>
+    <dimen name="margintop_usernametoolbarprofile">-100dp</dimen>
+    <dimen name="limitY_usernametollbarprofile">-250dp</dimen>
+    <dimen name="margintoptargety_usernametolbarprofile">40dp</dimen>
+    <dimen name="linearLayout_imageprofile">200dp</dimen>
+    <dimen name="paddingbottom_imgenprofile">20dp</dimen>
+    <dimen name="marginlefandrigth_profile">16dp</dimen>
+    <dimen name="margintoptollbar_circuleimageprofile">-15dp</dimen>
 </resources>
