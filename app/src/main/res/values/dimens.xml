@@ -39,4 +39,8 @@
     <dimen name="paddingbottom_imgenprofile">20dp</dimen>
     <dimen name="marginlefandrigth_profile">16dp</dimen>
     <dimen name="margintoptollbar_circuleimageprofile">-15dp</dimen>
+    <dimen name="margin_search">10dp</dimen>
+    <dimen name="margintop_search">30dp</dimen>
+    <dimen name="margin_searchleft">10dp</dimen>
+    <dimen name="marginSearchGridView">10dp</dimen>
 </resources>

@@ -27,4 +27,5 @@
     <string name="secondword_detail">Like me</string><string name="titleimage_datail">\"Todo pasa en la vida\"</string>
     <string name="content_maravilla">\"Todos somos breves inquilinos es este mundo imperfecto lleno de cosas maravillosas. No hay que tenerle miedo a los años, sino a la vida no vivida, a los años vacíos huecos de emociones, de triunfos y por qué no, también de fracasos nunca experimentados. Esos de los que tanto aprendemos.\"</string>
     <string name="transationname_picture">trasitionnamepicture</string>
+    <string name="searchhinttext">Buscar</string>
 </resources>
