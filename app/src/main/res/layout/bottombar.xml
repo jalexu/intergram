@@ -11,6 +11,9 @@
     app:itemIconTint="@android:color/white"
     app:itemTextColor="@android:color/white"
     app:menu="@menu/bottombar_items"
+    app:itemTabletMode="true"
+
+
 
     >
 

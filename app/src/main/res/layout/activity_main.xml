@@ -24,6 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginTop="100dp"
+                android:onClick="goWebPage"
                 android:background="@drawable/intergram" />
 
         </RelativeLayout>
